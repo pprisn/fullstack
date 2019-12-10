@@ -18,6 +18,12 @@ var users = []models.User{
 		Email:    "luther@gmail.com",
 		Password: "password",
 	},
+	models.User{
+		Nickname: "Okey 5",
+		Email:    "Okey@yandex.ru",
+		Password: "password",
+	},
+
 }
 
 var posts = []models.Post{
@@ -29,6 +35,11 @@ var posts = []models.Post{
 		Title:   "Title 2",
 		Content: "Hello world 2",
 	},
+	models.Post{
+		Title:   "Title 3",
+		Content: "Hello world 3",
+	},
+
 }
 
 func Load(db *gorm.DB) {
